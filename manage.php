@@ -25,6 +25,7 @@
  
 
  require_once(__DIR__.'/../../config.php');
+ require_once('./lib.php');
 //  require_once($CFG->dirroot . '/local/todo/classes/form/edit.php');
 
  global $DB;
@@ -43,7 +44,9 @@ $templatecontext = (object)[
     'editurl' => new moodle_url('/local/todo/edit.php'),
 ];
 
- echo $OUTPUT->render_from_template('local_todo/manage', $templatecontext);
+echo $OUTPUT->render_from_template('local_todo/manage', $templatecontext);
+ 
+$PAGE->requires->js_call_amd('local_todo/confirmdelete', 'init', array());
 
- echo $OUTPUT->footer();
+echo $OUTPUT->footer();
 

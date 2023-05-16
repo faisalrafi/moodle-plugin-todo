@@ -31,3 +31,6 @@
  $string['cancel_form'] = 'You Cancel the form';
  $string['create_task'] = 'You Created a New Task';
  $string['updated_task'] = 'You Updated the Task';
+ $string['deletetitle'] = 'Confirm Delete';
+ $string['modalmsg'] = 'Do you really want to delete this task?';
+ $string['delete'] = 'Delete';

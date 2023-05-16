@@ -45,7 +45,7 @@
           <td class="text-center">{{date}}</td>
           <td class="text-center">
               <input type="button" class="btn btn-primary ml-2" value="Edit" onclick="location.href='{{editurl}}?taskid={{id}}'">
-              <input type="button" class="btn btn-danger ml-2" value="Delete" onclick="location.href='?did={{id}}'">
+              <button id="delete-btn-{{id}}" class="btn btn-danger delete-btn">Delete</button>
           </td>
      </tr>
     {{/tasks}}

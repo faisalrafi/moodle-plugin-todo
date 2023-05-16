@@ -9,7 +9,7 @@
     'local_todo_delete_task_by_id' => array(
         'classname'   => 'local_todo_external',
         'methodname'  => 'delete_task_by_id',
-        'classpath'   => 'local/todo/external.php',
+        'classpath'   => 'local/todo/externallib.php',
         'description' => 'Delete a single task by id',
         'type'        => 'write',
         'ajax'        => true,

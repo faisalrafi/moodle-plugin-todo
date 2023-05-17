@@ -13,8 +13,16 @@
         'description' => 'Delete a single task by id',
         'type'        => 'write',
         'ajax'        => true,
+        'services'    => array(MOODLE_OFFICIAL_MOBILE_SERVICE),
     ),
-
-
-
- );
+    'local_todo_get_all_task' => array(
+        'classname'   => 'local_todo_external',
+        'methodname'  => 'get_all_task',
+        'classpath'   => 'local/todo/externallib.php',
+        'description' => 'Get All Task Details',
+        'type'        => 'write',
+        'ajax'        => true,
+        'services'    => array(MOODLE_OFFICIAL_MOBILE_SERVICE),
+    ),
+    
+);

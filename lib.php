@@ -19,4 +19,14 @@
     } catch (Exception $exception) {
         throw new moodle_exception($exception);
     }
-}
+  }
+
+  function local_todo_get_all_task(){
+    global $DB;
+    try {
+         $data = $DB->get_records('local_todo');
+         return $data;
+    } catch (Exception $exception) {
+        throw new moodle_exception($exception);
+    }
+  }
